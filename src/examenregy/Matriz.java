@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Matriz {
     Scanner sc = new Scanner(System.in);
-    int n =0;
-    int m =0;
+    private int n =0;
+    private int  m =0;  
     
     public int[][] leerMatricez() {
         System.out.println("Ingrese tamaño M de la matriz:");
@@ -26,7 +26,7 @@ public class Matriz {
         imprimirMatriz(matriz);
         return matriz;
     } 
-    public void imprimirMatriz(int[][] f) {
+    private void imprimirMatriz(int[][] f) {
         String str = "";
         for(int i =0; i<f.length; i++) {
             for(int j =0; j<f[0].length; j++){
